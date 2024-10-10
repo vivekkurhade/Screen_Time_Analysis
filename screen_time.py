@@ -23,6 +23,7 @@ plt.bar(grpapp['App'],grpapp['Usage (minutes)'],color = 'orange')
 plt.title('Most used apps')
 plt.xlabel('Apps')
 plt.ylabel('Usage (minutes)')
+plt.savefig('App vs Usage.png',dpi = 300)
 plt.show()
 
 #<--------------App vs date wise usage----------------->
@@ -42,6 +43,7 @@ plt.title("Screen Time trends for different Apps")
 plt.xlabel('Date')
 plt.xticks(rotation = 45)
 plt.ylabel('Usage (minutes)')
+plt.savefig('App vs Datewise usage.png',dpi = 300)
 
 plt.show()
 
@@ -64,6 +66,8 @@ plt.bar(day_wise_usage['Day'],day_wise_usage['Usage (minutes)'],color = '#A1C349
 plt.title('Average screen time usage per day of the week')
 plt.xlabel('Day of the Week')
 plt.ylabel('Average Usage (minutes)')   
+plt.savefig('App vs Daywise Usage.png',dpi = 300)
+
 plt.show()
 
 
@@ -101,4 +105,6 @@ plt.xlabel('Day of the Week')
 plt.ylabel('Usage (minutes)')
 plt.xticks(x + bar_width, insta_group['Day']) 
 plt.legend()
+plt.savefig('TopApps vs Usage.png',dpi = 300)
+
 plt.show()
